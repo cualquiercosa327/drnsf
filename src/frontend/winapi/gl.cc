@@ -127,7 +127,7 @@ void init()
         WGL_CONTEXT_FLAGS_ARB, WGL_CONTEXT_FORWARD_COMPATIBLE_BIT_ARB,
         0
     };
-    auto core_ctx = wglCreateContextAttribs(g_hdc, false, core_attribs);
+    auto core_ctx = wglCreateContextAttribs(g_hdc, (HGLRC__*)false, core_attribs);
     if (core_ctx) {
         // Switch to the core context.
         wglMakeCurrent(nullptr, nullptr);
@@ -150,7 +150,7 @@ void init()
         WGL_CONTEXT_FLAGS_ARB, WGL_CONTEXT_FORWARD_COMPATIBLE_BIT_ARB,
         0
     };
-    auto fwd_ctx = wglCreateContextAttribs(g_hdc, false, fwd_attribs);
+    auto fwd_ctx = wglCreateContextAttribs(g_hdc, (HGLRC__*)false, fwd_attribs);
     if (fwd_ctx) {
         // Switch to the forward context.
         wglMakeCurrent(nullptr, nullptr);

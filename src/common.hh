@@ -48,6 +48,8 @@
 #include <functional>
 #include <type_traits>
 #include <mutex>
+#include <iostream>
+#include <cstdio>
 
 /*
  * DRNSF_STRINGIFY

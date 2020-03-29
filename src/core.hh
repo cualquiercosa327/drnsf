@@ -27,6 +27,7 @@
  */
 
 #include <deque>
+#include <map>
 
 namespace drnsf {
 namespace core {

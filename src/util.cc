@@ -23,9 +23,9 @@
 #include <chrono>
 #include "util.hh"
 
-#if _WIN32
+//#if _WIN32
 #include <windows.h> // for wchar_t conversions
-#endif
+//#endif
 
 namespace drnsf {
 namespace util {
@@ -42,7 +42,7 @@ std::string to_string(std::string s)
     return s;
 }
 
-#ifdef _WIN32
+//#ifdef _WIN32
 // declared in util.hh
 std::wstring u8str_to_wstr(std::string u8str)
 {
@@ -116,7 +116,7 @@ std::string wstr_to_u8str(std::wstring wstr)
 
     return u8str;
 }
-#endif
+//#endif
 
 // declared in util.hh
 long get_time()

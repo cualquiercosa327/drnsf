@@ -744,7 +744,7 @@ auto operator %(decltype(on_exit_helper), T &&t)
     return handler{std::forward<T>(t)};
 }
 
-#ifdef _WIN32
+//#ifdef _WIN32
 /*
  * util::u8str_to_wstr
  * util::wstr_to_u8str
@@ -757,7 +757,7 @@ auto operator %(decltype(on_exit_helper), T &&t)
  */
 std::wstring u8str_to_wstr(std::string u8str);
 std::string wstr_to_u8str(std::wstring wstr);
-#endif
+//#endif
 
 /*
  * util::file
